@@ -12,8 +12,9 @@ void printMatrix(int myMat[][5], int N_ROWS, int N_COLS);
   int myMat[N_ROWS][N_COLS] = {{1,0,1,1,1}, {1,1,1,1,1}, {1,1,0,0,1}, {0,1,0,0,0},{0,0,0,0,0},{1,1,0,1,0}};
 
   printMatrix(myMat, N_ROWS, N_COLS);
-  
+  gradeCalculator(grades, cases)
   return 0;
+  
 }
 
 
@@ -45,8 +46,9 @@ if(grades [row][4] == "1" ){
 score += 5;
 }
 }
-
 return scores;
+
+  cout << setw(8)<< scores;
 }
 void printMatrix(int myMat[][5], int N_ROWS, int N_COLS) {
   for (int r = 0; r < N_ROWS; r++) {
